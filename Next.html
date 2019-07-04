@@ -1,48 +1,55 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>MovieNight</title>
-        <link rel="stylesheet" href="stylesheetLogin.css">
-       
-    </head>
 
-    <body>
-        
-        
-        <header id="game-page">MovieNight</header>
-        
-           
-  
-        <div class="container">
-            Score <br>
-            <div class="score" id="score">0</div>
-    
-            Timer <br>
+<head>
+    <meta charset="utf-8">
+    <title>MovieNight</title>
+    <link rel="stylesheet" href="stylesheetLogin.css">
+
+</head>
+
+<body>
+
+
+    <header id="game-page">MovieNight</header>
+
+
+
+    <div class="container">
+        Score <br>
+        <div class="score" id="score">0</div>
+
+        Timer <br>
         <div class="time">10</p>></div>
-      
-
-        </div>
 
 
+    </div>
 
 
-        <div class="question-space">
 
-          <p>Question txt</p>
-          <div>
+
+    <div class="question-space">
+
+        <p>Question txt</p>
+        <div>
             <img src="https://img4.looper.com/img/gallery/how-gotham-completely-changed-batman-and-no-one-noticed/no-more-long-halloween-1561999237.jpg" alt="">
-          </div>
-         
-        
-            <button class="A answer-choice">A</button>
-            <button class="B answer-choice">B</button>
-            <button class="C answer-choice">C</button>
         </div>
-          
 
-    
-          <script src="timer.js"></script>
-    </body>
+
+        <button id="A answer-choice">A</button>
+        <button class="B answer-choice">B</button>
+        <button class="C answer-choice">C</button>
+
+        <script type="text/javascript">
+            document.getElementById("A").onclick = function() {
+                location.href = "index.html";
+            };
+        </script>
+    </div>
+
+
+
+    <script src="timer.js"></script>
+</body>
+
 </html>
